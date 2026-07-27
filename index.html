@@ -1,659 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공항 셔츠룸 추천 | 홈</title>
-    <meta name="description" content="공항 셔츠룸 추천! 깔끔한 분위기에 합리적인 가격. 오늘밤 특별한 시간을 원한다면 지금 전화주세요. 010-6279-0862">
-    <meta name="keywords" content="공항 셔츠룸, 공항 셔츠룸 추천, 셔츠룸, 공항 유흥, 공항 술집">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://airport-shirt-info.hardcoreroom.com/">
-
-    <!-- Open Graph / Twitter Card -->
-    <meta property="og:title" content="공항 셔츠룸 추천 | 홈">
-    <meta property="og:description" content="깔끔한 분위기, 합리적인 가격. 오늘밤 특별한 시간을 원한다면? 지금 전화주세요.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://airport-shirt-info.hardcoreroom.com/">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect fill='%23000' width='1200' height='630'/%3E%3Ctext x='50%25' y='50%25' fill='%23ff3b00' font-size='4em' text-anchor='middle' dominant-baseline='middle' font-family='Impact'%3E공항 셔츠룸%3C/text%3E%3C/svg%3E" />
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="공항 셔츠룸 추천">
-    <meta name="twitter:description" content="깔끔한 분위기, 합리적인 가격. 오늘밤 특별한 시간을 원한다면?">
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "공항 셔츠룸",
-  "description": "공항 지역 최고의 셔츠룸. 깔끔한 시설과 친절한 서비스, 합리적인 가격.",
-  "telephone": "+82-10-6279-0862",
-  "url": "https://airport-shirt-info.hardcoreroom.com/",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "공항",
-    "addressRegion": "서울",
-    "addressCountry": "KR"
-  },
-  "priceRange": "₩₩₩",
-  "image": "https://airport-shirt-info.hardcoreroom.com/og-image.jpg"
-}</script>
-
-    <style>
-        /* ========== RESET & BASE ========== */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        :root {
-            --primary: #000000;
-            --secondary: #ffffff;
-            --accent: #ff3b00;
-            --font-stack: 'Impact', system-ui, sans-serif;
-            --gap: 48px;
-            --padding: 72px;
-            --section-gap: 120px;
-            --border-w: 3px;
-            --brutal-shadow: 6px 6px 0 var(--accent);
-        }
-
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: var(--primary);
-            color: var(--secondary);
-            font-family: var(--font-stack);
-            font-weight: 400;
-            line-height: 1.15;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            min-height: 100vh;
-            padding: 0 var(--padding);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* ========== TYPOGRAPHY ========== */
-        h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
-            font-family: var(--font-stack);
-        }
-
-        h1 {
-            font-size: clamp(3rem, 12vw, 6rem);
-            line-height: 0.9;
-            margin-bottom: 0.5em;
-            color: var(--secondary);
-            text-shadow: 4px 4px 0 var(--accent);
-        }
-
-        h2 {
-            font-size: clamp(2.4rem, 8vw, 4rem);
-            line-height: 0.95;
-            margin-bottom: 0.6em;
-            border-bottom: var(--border-w) solid var(--accent);
-            display: inline-block;
-            padding-bottom: 0.15em;
-        }
-
-        h3 {
-            font-size: clamp(1.5rem, 5vw, 2.4rem);
-            margin-bottom: 0.5em;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.3;
-            margin-bottom: 1em;
-            font-family: system-ui, sans-serif;
-            font-weight: 300;
-            text-transform: none;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 2px solid currentColor;
-            transition: none;
-        }
-        a:hover {
-            background: var(--accent);
-            color: var(--primary);
-        }
-
-        /* ========== CONTAINER & LAYOUT ========== */
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        header, main, footer {
-            width: 100%;
-        }
-
-        section {
-            margin-top: var(--section-gap);
-            margin-bottom: var(--section-gap);
-            padding: var(--padding) 0;
-        }
-
-        /* ========== BRUTALIST ELEMENTS ========== */
-        .skew-left {
-            transform: skew(-3deg);
-            transform-origin: left center;
-        }
-        .skew-right {
-            transform: skew(2deg);
-            transform-origin: right center;
-        }
-        .rotate-neg {
-            transform: rotate(-1.5deg);
-        }
-        .rotate-pos {
-            transform: rotate(1.5deg);
-        }
-
-        .border-box {
-            border: var(--border-w) solid var(--accent);
-            padding: 24px;
-            background: var(--primary);
-            box-shadow: var(--brutal-shadow);
-        }
-
-        .border-box--invert {
-            border-color: var(--secondary);
-            background: var(--accent);
-            color: var(--primary);
-            box-shadow: 6px 6px 0 var(--secondary);
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--primary);
-            font-size: 1.4rem;
-            padding: 16px 48px;
-            border: var(--border-w) solid var(--secondary);
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: none;
-            font-family: var(--font-stack);
-            letter-spacing: 0.05em;
-            text-decoration: none;
-        }
-        .btn:hover {
-            background: var(--secondary);
-            color: var(--primary);
-            border-color: var(--accent);
-        }
-
-        /* ========== HEADER & NAV ========== */
-        header {
-            padding: 24px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: var(--border-w) solid var(--accent);
-            margin-bottom: 0;
-            position: relative;
-            z-index: 10;
-        }
-
-        .logo {
-            font-size: 2rem;
-            color: var(--secondary);
-            text-shadow: 3px 3px 0 var(--accent);
-            letter-spacing: 0.08em;
-        }
-        .logo span {
-            color: var(--accent);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: var(--gap);
-        }
-
-        nav a {
-            color: var(--secondary);
-            border: none;
-            font-size: 1.2rem;
-            padding: 8px 16px;
-            border: 2px solid transparent;
-        }
-        nav a:hover {
-            border-color: var(--accent);
-            background: transparent;
-            color: var(--accent);
-        }
-
-        /* 햄버거 메뉴 (체크박스 기반) */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 2.4rem;
-            color: var(--accent);
-            user-select: none;
-            line-height: 1;
-            border: 2px solid var(--accent);
-            padding: 4px 12px;
-        }
-
-        #nav-toggle {
-            display: none;
-        }
-
-        /* ========== HERO ========== */
-        #hero {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            min-height: 80vh;
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-top: 0;
-            border-bottom: var(--border-w) solid var(--accent);
-        }
-
-        #hero h1 {
-            max-width: 90%;
-        }
-
-        #hero .hero-sub {
-            font-size: 1.8rem;
-            color: var(--accent);
-            margin-top: -0.5em;
-            margin-bottom: 1.5em;
-            border-left: 6px solid var(--accent);
-            padding-left: 24px;
-        }
-
-        /* ========== FEATURES ========== */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--gap);
-            margin-top: 48px;
-        }
-
-        .feature-card {
-            border: var(--border-w) solid var(--accent);
-            padding: 48px 24px;
-            background: var(--primary);
-            box-shadow: var(--brutal-shadow);
-        }
-        .feature-card h3 {
-            color: var(--accent);
-        }
-
-        /* ========== REVIEWS ========== */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--gap);
-        }
-
-        .review-card {
-            border: var(--border-w) solid var(--secondary);
-            padding: 32px;
-            background: var(--primary);
-            transform: rotate(-1deg);
-        }
-        .review-card:nth-child(even) {
-            transform: rotate(1deg);
-        }
-        .review-card .meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1rem;
-            color: var(--accent);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 12px;
-            margin-bottom: 16px;
-        }
-        .review-card .stars {
-            color: #ffcc00;
-        }
-        .review-card blockquote {
-            font-style: normal;
-            font-family: system-ui, sans-serif;
-            font-weight: 300;
-            font-size: 1.1rem;
-            line-height: 1.4;
-        }
-
-        /* ========== CTA ========== */
-        #cta {
-            text-align: center;
-            padding: var(--padding) 0;
-            border-top: var(--border-w) solid var(--accent);
-            border-bottom: var(--border-w) solid var(--accent);
-            margin-top: var(--section-gap);
-            margin-bottom: var(--section-gap);
-        }
-        #cta h2 {
-            border-bottom: none;
-            display: block;
-        }
-        #cta .phone-big {
-            font-size: 3rem;
-            color: var(--accent);
-            margin: 24px 0;
-        }
-
-        /* ========== FOOTER ========== */
-        footer {
-            padding: 48px 0 24px;
-            border-top: var(--border-w) solid var(--accent);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-            font-family: system-ui, sans-serif;
-            text-transform: none;
-        }
-        footer p {
-            margin-bottom: 0;
-            font-size: 0.9rem;
-        }
-        footer a {
-            border-bottom: none;
-        }
-
-        /* ========== RESPONSIVE (max-width: 768px) ========== */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 24px;
-            }
-            :root {
-                --gap: 24px;
-                --padding: 32px;
-                --section-gap: 64px;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--primary);
-                border: var(--border-w) solid var(--accent);
-                padding: 24px;
-                gap: 24px;
-                z-index: 100;
-            }
-
-            #nav-toggle:checked + .hamburger + nav ul {
-                display: flex;
-            }
-
-            nav a {
-                font-size: 1.6rem;
-                border-bottom: 2px solid var(--accent);
-            }
-
-            #hero h1 {
-                max-width: 100%;
-                font-size: clamp(2.8rem, 15vw, 4rem);
-            }
-
-            #hero .hero-sub {
-                font-size: 1.2rem;
-            }
-
-            .features-grid,
-            .reviews-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .feature-card,
-            .review-card {
-                transform: none !important;
-            }
-
-            #cta .phone-big {
-                font-size: 2rem;
-            }
-
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        /* ========== UTILITY ========== */
-        .full-bleed {
-            margin-left: calc(-1 * var(--padding));
-            margin-right: calc(-1 * var(--padding));
-            padding-left: var(--padding);
-            padding-right: var(--padding);
-            width: calc(100% + 2 * var(--padding));
-        }
-
-        .accent-text {
-            color: var(--accent);
-        }
-
-        .no-wrap {
-            white-space: nowrap;
-        }
-
-        .mt-0 { margin-top: 0; }
-        .mb-0 { margin-bottom: 0; }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>공항 셔츠룸 추천 - 홈</title>
+  <meta name="description" content="공항에서 셔츠룸을 찾는 순간, 목적과 상황에 따라 어떤 기준을 확인해야 할지 간단히 정리했습니다. 빠른 판단에 필요한 체크리스트를 제공합니다.">
+  <meta name="keywords" content="공항 셔츠룸, 셔츠룸 추천, 공항 셔츠룸 체크리스트, 셔츠룸 이용 팁">
+  <link rel="canonical" href="https://airport-shirt-info.hardcoreroom.com/">
+  <meta property="og:title" content="공항 셔츠룸 추천 — 목적별 체크리스트와 활용 가이드">
+  <meta property="og:description" content="공항에서 셔츠룸을 찾는 순간, 목적과 상황에 따라 어떤 기준을 확인해야 할지 간단히 정리했습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airport-shirt-info.hardcoreroom.com/">
+  <meta property="og:image" content="https://airport-shirt-info.hardcoreroom.com/og-image.jpg">
+  <!-- 기존 CSS 파일을 그대로 사용 -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
+  <nav class="nav-present">
+    <ul>
+      <li><a href="/home">홈</a></li>
+      <li><a href="/guide">이용 가이드</a></li>
+      <li><a href="/checklist">체크리스트</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">문의</a></li>
+    </ul>
+  </nav>
 
-    <!-- ============ HEADER ============ -->
-    <header>
-        <div class="logo">공항<span>셔츠룸</span></div>
+  <section class="x-img-t0sf">
+    <h1>공항 셔츠룸, 언제와 왜 찾을까?</h1>
+    <p>비행 전후에 급하게 옷을 바꾸고 싶을 때, 혹은 긴 여행 중에 깔끔한 셔츠를 입고 싶을 때. 공항 셔츠룸은 그런 순간을 위한 작은 휴식 공간이죠. 하지만 셔츠룸마다 제공하는 서비스와 시설이 다 달라서, 선택에 고민이 생기기 마련입니다.</p>
+    <p>여기서는 “목적별”로 가장 중요한 체크 포인트를 정리했습니다. 비즈니스 회의 준비, 여행 사진 촬영, 혹은 단순히 옷을 다림질하고 싶은 상황까지, 각각의 상황에 맞는 최적의 셔츠룸을 찾을 수 있도록 도와드릴게요.</p>
+  </section>
 
-        <input type="checkbox" id="nav-toggle">
-        <label for="nav-toggle" class="hamburger">☰</label>
+  <section class="v-grid-q9fa">
+    <h2>목적별 셔츠룸 선택 가이드</h2>
+    <p><strong>1. 회의·프레젠테이션 준비</strong> – 회의 직전 급히 셔츠를 다림질하거나 교체해야 할 때는, 최신형 스팀다리미와 넓은 라운지 공간이 있는 곳을 우선 고려하세요. 조명이 충분하고, 거울이 크게 설치된 공간이면 옷을 입고 바로 확인하기도 편합니다.</p>
+    <p><strong>2. 인스타·블로그 촬영</strong> – 사진을 찍을 계획이라면, 자연광이 들어오는 창이 있거나 배경이 깔끔한 디자인의 셔츠룸을 선택하세요. 일부 셔츠룸은 포토존을 별도 제공하기도 하니, 사전 확인이 필요합니다.</p>
+    <p><strong>3. 장시간 대기·휴식</strong> – 비행 전 긴 대기시간 동안 편안히 쉴 수 있는 좌석과 커피 머신, 무료 Wi‑Fi가 제공되는 셔츠룸이 좋습니다. 이때는 샤워 시설 유무도 큰 영향을 미칩니다.</p>
+    <p><strong>4. 가족·어린이 동반</strong> – 어린 아이와 함께라면, 유아용 기저귀 교체대와 안전 바가 있는 셔츠룸을 선택하세요. 넓은 실내와 안전문이 설치된 곳은 아이가 뛰어다녀도 안심할 수 있습니다.</p>
+  </section>
 
-        <nav>
-            <ul>
-                <li><a href="#hero">홈</a></li>
-                <li><a href="#features">소개</a></li>
-                <li><a href="#reviews">리뷰</a></li>
-                <li><a href="#cta">연락</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="n-box-5wnw">
+    <h2>체크리스트: 꼭 확인해야 할 7가지 항목</h2>
+    <dl class="n-wrap-ki4b">
+      <dt>① 시설 종류</dt>
+      <dd>스팀다리미, 드라이어, 세탁기, 샤워실 등 제공되는 설비를 미리 확인합니다.</dd>
+      <dt>② 영업 시간</dt>
+      <dd>항공편 도착 및 출발 시간과 맞춰 이용할 수 있도록, 24시간 운영 여부를 체크하세요.</dd>
+      <dt>③ 예약 가능 여부</dt>
+      <dd>특히 대형 공항은 사전 예약이 필요할 수 있습니다. 온라인 예약 시스템이 있는지 살펴보세요.</dd>
+      <dt>④ 가격 정책</dt>
+      <dd>시간당 요금, 옷 개수당 추가 비용, 패키지 할인 등 가격 구조를 확인해 예산을 미리 계획합니다.</dd>
+      <dt>⑤ 접근성</dt>
+      보안 검색대를 지나기 쉬운 위치인지, 엘리베이터와 연계된 출입구가 있는지 점검합니다.</dd>
+      <dt>⑥ 청결 상태</dt>
+      <dd>최근 이용자 리뷰와 사진을 통해 청소 상태와 위생 수준을 파악합니다.</dd>
+      <dt>⑦ 추가 서비스</dt>
+      <dd>옷 수선, 신발 관리, 라운지 이용권 연계 등 부가 서비스가 있는지 알아봅니다.</dd>
+    </dl>
+  </section>
 
-    <main>
-        <!-- ============ HERO ============ -->
-        <section id="hero" class="full-bleed skew-right">
-            <h1>공항 셔츠룸<br>추천 No.1</h1>
-            <p class="hero-sub">깔끔한 분위기, 확실한 서비스</p>
-            <a href="tel:+821062790862" class="btn">지금 전화 <span class="no-wrap">📞 010-6279-0862</span></a>
-        </section>
+  <section class="v-main-mbtd">
+    <h2>상황별 활용 시나리오</h2>
+    <p>“출발 2시간 전, 비즈니스 정장을 다림질하고 싶다”는 상황이라면, 가장 먼저 스팀다리미와 작업대가 구비된 셔츠룸을 찾아보세요. 대부분의 셔츠룸은 30분 단위로 이용 시간이 제공되므로, 필요한 시간만큼 예약하거나 현장 방문 전 대기 시간을 최소화하는 것이 좋습니다.</p>
+    <p>“야간 도착 후 피곤함을 풀고 싶다”는 경우, 라운지와 연계된 셔츠룸을 선택하면 휴식과 옷 관리 두 마리 토끼를 잡을 수 있습니다. 이때는 조용한 분위기의 방과 무료 음료 서비스가 있는지를 체크하면 더욱 편리합니다.</p>
+    <p>“아이와 함께 긴 비행을 앞두고 있다”면, 유아용 기저귀 교체대와 안전 바가 설치된 가족 전용 셔츠룸을 활용하세요. 아이가 옷을 갈아입는 동안 부모는 간단히 커피를 마시며 휴식을 취할 수 있어, 전체 여행 스트레스를 크게 낮출 수 있습니다.</p>
+    <p>“인스타그램용 사진 촬영”을 계획 중이라면, 조명이 좋은 방에 스탠드 조명이나 반사판이 있는지 미리 확인하고, 배경이 깔끔한 방을 예약하세요. 셔츠룸 자체가 사진 스팟으로 활용될 때가 많아, 사진 촬영 전후에 빠르게 옷을 갈아입을 수 있어 효율적입니다.</p>
+  </section>
 
-        <!-- ============ FEATURES ============ -->
-        <section id="features" class="skew-left">
-            <h2>왜 우리인가?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🔥 위치</h3>
-                    <p>공항 바로 근처, 접근성 최고. 발걸음만 들여도 분위기가 달라짐. 주차도 완벽.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💎 시설</h3>
-                    <p>프라이빗 룸, 최상의 사운드, 조명. 인스타 감성 200% . 깔끔함에 진심임.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🍸 가격</h3>
-                    <p>합리적인 가격에 양질의 서비스. 다른 데 비하면 가성비 미쳤음. 형들 부담 없이 와.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>👥 직원</h3>
-                    <p>친절함이 무기. 눈치 안 보이고 편하게 즐길 수 있는 분위기. 단골 되는 이유가 있음.</p>
-                </div>
-            </div>
-        </section>
+  <section class="q-head-kmv8">
+    <h2>자주 묻는 질문</h2>
+    <dl class="n-wrap-ki4b">
+      <dt>Q1. 셔츠룸은 공항마다 모두 같은 서비스인가요?</dt>
+      <dd>A1. 아닙니다. 공항마다 제공하는 설비와 서비스가 다르며, 일부는 고급 라운지와 연계된 프리미엄 옵션을 제공하고, 일부는 기본적인 다림질만 가능한 저가형 시설도 있습니다.</dd>
+      <dt>Q2. 사전 예약 없이 바로 이용할 수 있나요?</dt>
+      <dd>A2. 대형 공항의 인기 셔츠룸은 사전 예약이 필수인 경우가 많습니다. 특히 성수기나 프라임 타임에는 현장 대기 시간이 길어질 수 있으니, 사전 예약을 권장합니다.</dd>
+      <dt>Q3. 옷이 지워지거나 손상될 경우 보상은 어떻게 되나요?</dt>
+      <dd>A3. 대부분의 셔츠룸은 손상에 대한 책임을 면책 조항에 명시하고 있습니다. 고가의 의류는 자체 포장해서 가져가거나, 별도 보험 서비스를 이용하는 것이 안전합니다.</dd>
+      <dt>Q4. 셔츠룸 이용 요금은 현금만 받나요?</dt>
+      <dd>A4. 대부분 신용카드와 모바일 결제를 지원합니다. 현금 결제는 일부 오래된 시설에서만 가능하니, 이용 전 결제 수단을 확인해 주세요.</dd>
+    </dl>
+  </section>
 
-        <!-- ============ REVIEWS ============ -->
-        <section id="reviews" class="rotate-pos full-bleed">
-            <h2>진짜 리얼 후기</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="meta">
-                        <span class="nick">김형석</span>
-                        <span class="date">2025-04-10</span>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <blockquote>“친구 따라 갔다가 완전 반했음. 분위기 미쳤고 직원들도 친절. 다음에 또 올게요!”</blockquote>
-                </div>
-                <div class="review-card">
-                    <div class="meta">
-                        <span class="nick">이대호</span>
-                        <span class="date">2025-03-28</span>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <blockquote>“출장 와서 들렀는데 완전 잘했어. 공항에서 가깝고 가격도 합리적. 강추!”</blockquote>
-                </div>
-                <div class="review-card">
-                    <div class="meta">
-                        <span class="nick">박준수</span>
-                        <span class="date">2025-03-15</span>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐</div>
-                    <blockquote>“여기 괜찮네. 안주도 맛있고 술값도 착함. 단점은 주차장이 좁다는 거? 그래도 또 올 의향 있음.”</blockquote>
-                </div>
-                <div class="review-card">
-                    <div class="meta">
-                        <span class="nick">최민호</span>
-                        <span class="date">2025-02-20</span>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <blockquote>“형들이랑 야구 보고 와서 들렀
-
-
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⚖️ COMPARE</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 셔츠룸 추천 vs 공항 셔츠룸 추천 비교 — 어디가 더 좋을까? 비교 분석</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제목: 창작한 제목 | The Venus Expansion Shock: TERAFORM Mars’s Bust in the Two-Player Strategy Arena 아, 진짜... 테라포밍 마스의 비너스 확장팩이 특정 2인 전략 게임에서 밸런스를 완전히 무너뜨리는 </p>
-      </div>
-      <a href="posts/compare-002-i8h90e.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 셔츠룸 추천 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
-        <h3>제목 창작: "공항 셔츠룸 선택 노하우: 투명한 결정 과정, 장기 성과 관리" --- 아, 진짜... 2023년 홍대 상권에서 폐업한 업소들의 공통된 원인은 "임대차 계약과 권리금 설정"이었습니다. 하지만 살아남은 곳들은 마치 다른 판을 두드리는 것처럼 차별화</h3>
-      </div>
-      <a href="posts/qa-001-i8h90e.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공항 셔츠룸 추천 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
-        <h3>제목: 창작한 제목: 테라포밍 마스 비너스 확장 게임 밸런스 실패 사례와 재발 방지 전략 #### 소제목 1: 실패 사례 복기와 그 함의#### 소제목 2: 실패 원인 분석과 관찰 포인트 설정#### 소제목 3: 상황별 대응 전략 제시#### 소제목 4: 게임</h3>
-      </div>
-      <a href="posts/review-002-7aejsg.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">구체적 클래스 카드 스탯 차이와 밸런스 변경 이해하기</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 글룸헤이븐 1판과 2판 사이에 변경된 클래스 카드들의 정확한 스탯 차이와 밸런스 변경 이유를 파악하는 데 도움이 되는 구체적인 맥락을 작성하고자 합니다. ### 주제 소개글룸헤이븐은 보드게임 아COMP 호러 카드 에라타의 한 베테랑 게임입니다. 새로운 </p>
-      </div>
-      <a href="posts/t3link-001-7aejsg.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
+  <footer class="v-grid-q9fa">
+    <p>© 2026 공항 셔츠룸 가이드. 모든 권리 보유.</p>
+    <p>본 사이트는 공항 셔츠룸에 대한 일반적인 정보를 제공하며, 실제 서비스 내용은 각 공항 및 운영사에 따라 다를 수 있습니다.</p>
+  </footer>
 </body>
 </html>
